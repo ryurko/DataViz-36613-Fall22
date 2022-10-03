@@ -28,6 +28,7 @@ shinyServer(
                            group = name)) +
                 geom_line(size = 2) +
                 theme_bw() +
+                ggthemes::scale_color_colorblind() +
                 theme(legend.position = "bottom")
         })
     }
